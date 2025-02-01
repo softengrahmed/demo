@@ -1,0 +1,114 @@
+{
+  "dashboard": {
+    "id": null,
+    "title": "Application Performance Metrics",
+    "panels": [
+      {
+        "type": "graph",
+        "title": "HTTP Request Latency",
+        "targets": [
+          {
+            "expr": "http_request_latency",
+            "legendFormat": "Latency"
+          }
+        ]
+      },
+      {
+        "type": "graph",
+        "title": "Error Rate",
+        "targets": [
+          {
+            "expr": "error_rate",
+            "legendFormat": "Errors"
+          }
+        ]
+      },
+      {
+        "type": "graph",
+        "title": "CPU Utilization",
+        "targets": [
+          {
+            "expr": "cpu_utilization",
+            "legendFormat": "CPU"
+          }
+        ]
+      },
+      {
+        "type": "graph",
+        "title": "Memory Utilization",
+        "targets": [
+          {
+            "expr": "memory_utilization",
+            "legendFormat": "Memory"
+          }
+        ]
+      },
+      {
+        "type": "graph",
+        "title": "Database Query Latency",
+        "targets": [
+          {
+            "expr": "database_query_latency",
+            "legendFormat": "DB Latency"
+          }
+        ]
+      },
+      {
+        "type": "graph",
+        "title": "Number of Active Sessions",
+        "targets": [
+          {
+            "expr": "number_of_active_sessions",
+            "legendFormat": "Sessions"
+          }
+        ]
+      },
+      {
+        "type": "graph",
+        "title": "Page Load Time",
+        "targets": [
+          {
+            "expr": "page_load_time",
+            "legendFormat": "Load Time"
+          }
+        ]
+      },
+      {
+        "type": "graph",
+        "title": "Successful Login Rate",
+        "targets": [
+          {
+            "expr": "successful_login_rate",
+            "legendFormat": "Login Success"
+          }
+        ]
+      },
+      {
+        "type": "graph",
+        "title": "Failed Login Attempts",
+        "targets": [
+          {
+            "expr": "failed_login_attempts",
+            "legendFormat": "Failed Logins"
+          }
+        ]
+      },
+      {
+        "type": "graph",
+        "title": "Book Lending Success Rate",
+        "targets": [
+          {
+            "expr": "book_lending_success_rate",
+            "legendFormat": "Lending Success"
+          }
+        ]
+      }
+    ],
+    "templating": {
+      "list": []
+    },
+    "schemaVersion": 16,
+    "version": 0,
+    "links": []
+  }
+}
