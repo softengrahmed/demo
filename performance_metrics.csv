@@ -1,0 +1,11 @@
+Metric,Description,Importance,Source
+http_request_latency,Time taken to process HTTP requests,Indicates the responsiveness of the application,Four Golden Signals
+error_rate,Percentage of failed requests,Helps identify issues in the application,RED Method
+cpu_utilization,Percentage of CPU usage,Indicates resource bottlenecks,USE Method
+memory_utilization,Percentage of memory usage,Helps in identifying memory leaks or insufficient memory allocation,USE Method
+database_query_latency,Time taken to execute database queries,Indicates database performance issues,Derived from test code (LoginServletTests)
+number_of_active_sessions,Number of active user sessions,Indicates user load on the system,Derived from test code (login_user.feature)
+page_load_time,Time taken to load web pages,Affects user experience,Derived from test code (basic_test.py)
+successful_login_rate,Percentage of successful login attempts,Indicates authentication system reliability,Derived from test code (login_user.feature)
+failed_login_attempts,Number of failed login attempts,Helps in identifying potential security issues,Derived from test code (login_user.feature)
+book_lending_success_rate,Percentage of successful book lending operations,Indicates the reliability of the library system,Derived from test code (basic_test.py)
