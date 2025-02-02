@@ -1,0 +1,115 @@
+{
+  "dashboard": {
+    "id": null,
+    "title": "Application Performance Monitoring",
+    "tags": [],
+    "timezone": "browser",
+    "schemaVersion": 16,
+    "version": 0,
+    "refresh": "5s",
+    "panels": [
+      {
+        "type": "graph",
+        "title": "Latency",
+        "targets": [
+          {
+            "expr": "histogram_quantile(0.95, sum(rate(http_request_duration_seconds_bucket[5m])) by (le))",
+            "legendFormat": "95th percentile",
+            "refId": "A"
+          }
+        ],
+        "id": 1
+      },
+      {
+        "type": "graph",
+        "title": "Error Rate",
+        "targets": [
+          {
+            "expr": "sum(rate(http_requests_total{status=~\"5..\"}[5m])) / sum(rate(http_requests_total[5m]))",
+            "legendFormat": "Error Rate",
+            "refId": "A"
+          }
+        ],
+        "id": 2
+      },
+      {
+        "type": "graph",
+        "title": "Throughput",
+        "targets": [
+          {
+            "expr": "sum(rate(http_requests_total[5m]))",
+            "legendFormat": "Throughput",
+            "refId": "A"
+          }
+        ],
+        "id": 3
+      },
+      {
+        "type": "graph",
+        "title": "Saturation",
+        "targets": [
+          {
+            "expr": "sum(node_cpu_seconds_total{mode=\"idle\"}) by (instance)",
+            "legendFormat": "CPU Saturation",
+            "refId": "A"
+          },
+          {
+            "expr": "sum(node_memory_MemAvailable_bytes) by (instance) / sum(node_memory_MemTotal_bytes) by (instance)",
+            "legendFormat": "Memory Saturation",
+            "refId": "B"
+          }
+        ],
+        "id": 4
+      },
+      {
+        "type": "graph",
+        "title": "Request Duration",
+        "targets": [
+          {
+            "expr": "histogram_quantile(0.95, sum(rate(http_request_duration_seconds_bucket[5m])) by (le))",
+            "legendFormat": "95th percentile",
+            "refId": "A"
+          }
+        ],
+        "id": 5
+      },
+      {
+        "type": "graph",
+        "title": "Database Query Performance",
+        "targets": [
+          {
+            "expr": "histogram_quantile(0.95, sum(rate(db_query_duration_seconds_bucket[5m])) by (le))",
+            "legendFormat": "95th percentile",
+            "refId": "A"
+          }
+        ],
+        "id": 6
+      },
+      {
+        "type": "graph",
+        "title": "Cache Hit/Miss Ratio",
+        "targets": [
+          {
+            "expr": "sum(rate(cache_hits_total[5m])) / (sum(rate(cache_hits_total[5m])) + sum(rate(cache_misses_total[5m])))",
+            "legendFormat": "Cache Hit Ratio",
+            "refId": "A"
+          }
+        ],
+        "id": 7
+      },
+      {
+        "type": "graph",
+        "title": "User Experience Metrics (Core Web Vitals)",
+        "targets": [
+          {
+            "expr": "histogram_quantile(0.95, sum(rate(web_vital_lcp_bucket[5m])) by (le))",
+            "legendFormat": "LCP 95th percentile",
+            "refId": "A"
+          },
+          {
+            "expr": "histogram_quantile(0.95, sum(rate(web_vital_fid_bucket[5m])) by (le))",
+            "legendFormat": "FID 95th percentile",
+            "refId": "B"
+          },
+          {
+            "expr": "histogram_quantile(0.95, sum(rate(web_vital_cls_bucket
