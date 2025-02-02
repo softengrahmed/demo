@@ -1,0 +1,56 @@
+{
+  "dashboard": {
+    "id": null,
+    "title": "Application Performance Monitoring",
+    "panels": [
+      {
+        "type": "graph",
+        "title": "Response Time",
+        "targets": [
+          {
+            "expr": "response_time",
+            "legendFormat": "{{instance}}",
+            "refId": "A"
+          }
+        ],
+        "yaxes": [
+          {
+            "format": "s",
+            "label": "Seconds",
+            "logBase": 1,
+            "min": 0
+          }
+        ]
+      },
+      {
+        "type": "graph",
+        "title": "Request Rate",
+        "targets": [
+          {
+            "expr": "request_rate",
+            "legendFormat": "{{instance}}",
+            "refId": "A"
+          }
+        ],
+        "yaxes": [
+          {
+            "format": "req/s",
+            "label": "Requests per Second",
+            "logBase": 1,
+            "min": 0
+          }
+        ]
+      },
+      {
+        "type": "graph",
+        "title": "Error Rate",
+        "targets": [
+          {
+            "expr": "error_rate",
+            "legendFormat": "{{instance}}",
+            "refId": "A"
+          }
+        ],
+        "yaxes": [
+          {
+            "format": "%",
