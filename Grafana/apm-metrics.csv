@@ -1,0 +1,13 @@
+Metric,Description,Importance,Source
+Response Time (Latency),Time taken to respond to a request,Critical for understanding user experience,Four Golden Signals
+Request Rate (Traffic),Number of requests received per second,Helps in understanding the load on the system,Four Golden Signals, RED Method
+Error Rate,Number of failed requests,Essential for identifying issues in the application,Four Golden Signals, RED Method
+CPU Utilization,Percentage of CPU being used,Helps in understanding resource usage,USE Method
+Memory Utilization,Percentage of memory being used,Critical for ensuring the application does not run out of memory,USE Method
+Disk I/O,Rate of read/write operations,Important for understanding the performance of storage,USE Method
+Network I/O,Rate of data being sent/received over the network,Helps in understanding the performance and capacity of the network,USE Method
+Database Query Performance,Time taken to execute database queries,Critical for applications that rely heavily on database operations,Industry Best Practices
+Cache Hit Rate,Percentage of requests served from the cache,Helps in understanding the efficiency of caching mechanisms,Industry Best Practices
+Thread Count,Number of active threads,Helps in understanding the concurrency level and potential bottlenecks,Industry Best Practices
+Garbage Collection Time,Time spent in garbage collection,Important for understanding the impact of garbage collection on application performance,Industry Best Practices
+Service Availability,Uptime of the application,Critical for ensuring the application is available to users,Industry Best Practices
