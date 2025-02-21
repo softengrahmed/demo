@@ -1,0 +1,20 @@
+Metric Name,Description,Importance
+http_request_duration_seconds,Measures the time taken to process HTTP requests.,Helps identify slow endpoints and optimize response times.
+http_requests_total,Total number of HTTP requests received by the application.,Tracks traffic and usage patterns.
+http_request_errors_total,Total number of HTTP requests resulting in errors (e.g., 4xx, 5xx).,Monitors application reliability and error rates.
+db_query_duration_seconds,Measures the time taken to execute database queries.,Identifies slow database queries that may impact performance.
+db_query_errors_total,Total number of database query errors.,Tracks database reliability and error rates.
+ui_render_time_seconds,Measures the time taken to render UI components.,Ensures a smooth user experience by monitoring UI performance.
+selenium_test_duration_seconds,Measures the time taken to execute Selenium-based UI tests.,Tracks the performance of automated UI tests.
+selenium_test_failures_total,Total number of failed Selenium-based UI tests.,Monitors the reliability of UI functionalities.
+bdd_scenario_duration_seconds,Measures the time taken to execute BDD scenarios.,Tracks the performance of behavior-driven development tests.
+bdd_scenario_failures_total,Total number of failed BDD scenarios.,Monitors the reliability of application features tested through BDD.
+cpu_usage_percentage,Percentage of CPU usage by the application.,Ensures the application is not overloading the server.
+memory_usage_bytes,Amount of memory used by the application.,Tracks memory consumption to prevent memory leaks or overuse.
+disk_io_bytes,Measures the disk I/O operations performed by the application.,Monitors disk usage and identifies potential bottlenecks.
+network_io_bytes,Measures the network I/O operations performed by the application.,Tracks network usage and identifies potential bottlenecks.
+active_sessions_total,Total number of active user sessions.,Monitors user engagement and application load.
+user_authentication_failures,Total number of failed user authentication attempts.,Tracks security-related metrics and identifies potential brute-force attacks.
+page_load_time_seconds,Measures the time taken to load web pages.,Ensures a fast and responsive user experience.
+api_response_time_seconds,Measures the time taken to respond to API requests.,Tracks the performance of API endpoints.
+api_error_rate,Percentage of API requests resulting in errors.,Monitors the reliability of API endpoints.
