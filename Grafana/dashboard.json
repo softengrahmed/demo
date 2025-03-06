@@ -1,0 +1,155 @@
+{
+  "dashboard": {
+    "id": null,
+    "uid": null,
+    "title": "Application Performance Monitoring",
+    "tags": ["performance", "monitoring"],
+    "timezone": "browser",
+    "schemaVersion": 16,
+    "version": 0,
+    "refresh": "5s",
+    "panels": [
+      {
+        "type": "graph",
+        "title": "Response Time",
+        "targets": [
+          {
+            "expr": "response_time",
+            "legendFormat": "{{instance}}",
+            "refId": "A"
+          }
+        ],
+        "yaxes": [
+          {
+            "format": "ms",
+            "label": "Time (ms)",
+            "logBase": 1,
+            "min": 0
+          },
+          {}
+        ]
+      },
+      {
+        "type": "graph",
+        "title": "Throughput",
+        "targets": [
+          {
+            "expr": "throughput",
+            "legendFormat": "{{instance}}",
+            "refId": "A"
+          }
+        ],
+        "yaxes": [
+          {
+            "format": "ops",
+            "label": "Requests per Second",
+            "logBase": 1,
+            "min": 0
+          },
+          {}
+        ]
+      },
+      {
+        "type": "graph",
+        "title": "Error Rate",
+        "targets": [
+          {
+            "expr": "error_rate",
+            "legendFormat": "{{instance}}",
+            "refId": "A"
+          }
+        ],
+        "yaxes": [
+          {
+            "format": "percent",
+            "label": "Error Rate (%)",
+            "logBase": 1,
+            "min": 0
+          },
+          {}
+        ]
+      },
+      {
+        "type": "graph",
+        "title": "CPU Utilization",
+        "targets": [
+          {
+            "expr": "cpu_utilization",
+            "legendFormat": "{{instance}}",
+            "refId": "A"
+          }
+        ],
+        "yaxes": [
+          {
+            "format": "percent",
+            "label": "CPU Utilization (%)",
+            "logBase": 1,
+            "min": 0
+          },
+          {}
+        ]
+      },
+      {
+        "type": "graph",
+        "title": "Memory Utilization",
+        "targets": [
+          {
+            "expr": "memory_utilization",
+            "legendFormat": "{{instance}}",
+            "refId": "A"
+          }
+        ],
+        "yaxes": [
+          {
+            "format": "percent",
+            "label": "Memory Utilization (%)",
+            "logBase": 1,
+            "min": 0
+          },
+          {}
+        ]
+      },
+      {
+        "type": "graph",
+        "title": "Disk I/O",
+        "targets": [
+          {
+            "expr": "disk_io",
+            "legendFormat": "{{instance}}",
+            "refId": "A"
+          }
+        ],
+        "yaxes": [
+          {
+            "format": "ops",
+            "label": "Disk Operations",
+            "logBase": 1,
+            "min": 0
+          },
+          {}
+        ]
+      },
+      {
+        "type": "graph",
+        "title": "Network I/O",
+        "targets": [
+          {
+            "expr": "network_io",
+            "legendFormat": "{{instance}}",
+            "refId": "A"
+          }
+        ],
+        "yaxes": [
+          {
+            "format": "bps",
+            "label": "Network Bandwidth",
+            "logBase": 1,
+            "min": 0
+          },
+          {}
+        ]
+      },
+      {
+        "type": "graph",
+        "title": "Database Query Performance",
+       
