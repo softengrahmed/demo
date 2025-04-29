@@ -1,0 +1,11 @@
+metric_name,description,importance
+http_request_duration_seconds,Histogram of HTTP request durations,Helps identify slow endpoints
+http_requests_total,Total number of HTTP requests,Tracks overall traffic
+http_request_errors_total,Total number of HTTP request errors,Monitors error rates
+cpu_usage_percentage,Percentage of CPU usage,Tracks server load
+memory_usage_bytes,Memory usage in bytes,Monitors memory consumption
+active_sessions,Number of active user sessions,Tracks user engagement
+database_query_duration_seconds,Histogram of database query durations,Identifies slow database queries
+failed_logins_total,Total number of failed login attempts,Monitors security-related issues
+selenium_test_failures_total,Total number of Selenium test failures,Tracks UI test stability
+bdd_test_failures_total,Total number of BDD test failures,Monitors feature-level test stability

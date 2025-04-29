@@ -1,0 +1,118 @@
+{
+  "dashboard": {
+    "id": null,
+    "title": "Application Monitoring Dashboard",
+    "panels": [
+      {
+        "type": "graph",
+        "title": "HTTP Request Duration",
+        "targets": [
+          {
+            "expr": "http_request_duration_seconds",
+            "legendFormat": "{{method}} {{status}}",
+            "refId": "A"
+          }
+        ]
+      },
+      {
+        "type": "graph",
+        "title": "HTTP Requests Total",
+        "targets": [
+          {
+            "expr": "http_requests_total",
+            "legendFormat": "{{method}}",
+            "refId": "B"
+          }
+        ]
+      },
+      {
+        "type": "graph",
+        "title": "HTTP Request Errors",
+        "targets": [
+          {
+            "expr": "http_request_errors_total",
+            "legendFormat": "{{method}} {{status}}",
+            "refId": "C"
+          }
+        ]
+      },
+      {
+        "type": "graph",
+        "title": "CPU Usage",
+        "targets": [
+          {
+            "expr": "cpu_usage_percentage",
+            "refId": "D"
+          }
+        ]
+      },
+      {
+        "type": "graph",
+        "title": "Memory Usage",
+        "targets": [
+          {
+            "expr": "memory_usage_bytes",
+            "refId": "E"
+          }
+        ]
+      },
+      {
+        "type": "graph",
+        "title": "Active Sessions",
+        "targets": [
+          {
+            "expr": "active_sessions",
+            "refId": "F"
+          }
+        ]
+      },
+      {
+        "type": "graph",
+        "title": "Database Query Duration",
+        "targets": [
+          {
+            "expr": "database_query_duration_seconds",
+            "refId": "G"
+          }
+        ]
+      },
+      {
+        "type": "graph",
+        "title": "Failed Logins",
+        "targets": [
+          {
+            "expr": "failed_logins_total",
+            "refId": "H"
+          }
+        ]
+      },
+      {
+        "type": "graph",
+        "title": "Selenium Test Failures",
+        "targets": [
+          {
+            "expr": "selenium_test_failures_total",
+            "refId": "I"
+          }
+        ]
+      },
+      {
+        "type": "graph",
+        "title": "BDD Test Failures",
+        "targets": [
+          {
+            "expr": "bdd_test_failures_total",
+            "refId": "J"
+          }
+        ]
+      }
+    ],
+    "templating": {
+      "list": []
+    },
+    "schemaVersion": 16,
+    "version": 0,
+    "refresh": "5s"
+  },
+  "overwrite": false
+}
