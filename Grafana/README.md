@@ -1,0 +1,1 @@
+# Suggested Performance Metrics\n\n## List of Performance Metrics\n\n1. **Response Time (Latency)**\n   - **Description**: Measures the time taken for the application to respond to a request.\n   - **Importance**: Critical for understanding the user experience and identifying slow endpoints.\n   - **Usage**: Monitor average, median, and 95th
