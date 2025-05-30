@@ -1,0 +1,1 @@
+Metric,Explanation,Importance,Usage,Source\nResponse Time,Measures the time taken for the application to respond to a request,High response times can lead to poor user experience and can indicate performance bottlenecks
