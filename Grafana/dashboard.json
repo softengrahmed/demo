@@ -1,0 +1,153 @@
+{
+  "dashboard": {
+    "id": null,
+    "title": "Application Performance Monitoring",
+    "tags": [],
+    "timezone": "browser",
+    "schemaVersion": 16,
+    "version": 0,
+    "refresh": "5s",
+    "panels": [
+      {
+        "type": "graph",
+        "title": "Response Time",
+        "targets": [
+          {
+            "expr": "response_time",
+            "format": "time_series",
+            "interval": "",
+            "legendFormat": "{{instance}}",
+            "refId": "A"
+          }
+        ],
+        "xaxis": {
+          "show": true
+        },
+        "yaxis": {
+          "show": true,
+          "format": "ms"
+        }
+      },
+      {
+        "type": "graph",
+        "title": "Error Rate",
+        "targets": [
+          {
+            "expr": "error_rate",
+            "format": "time_series",
+            "interval": "",
+            "legendFormat": "{{instance}}",
+            "refId": "A"
+          }
+        ],
+        "xaxis": {
+          "show": true
+        },
+        "yaxis": {
+          "show": true,
+          "format": "percent"
+        }
+      },
+      {
+        "type": "graph",
+        "title": "Throughput",
+        "targets": [
+          {
+            "expr": "throughput",
+            "format": "time_series",
+            "interval": "",
+            "legendFormat": "{{instance}}",
+            "refId": "A"
+          }
+        ],
+        "xaxis": {
+          "show": true
+        },
+        "yaxis": {
+          "show": true,
+          "format": "ops"
+        }
+      },
+      {
+        "type": "graph",
+        "title": "CPU Utilization",
+        "targets": [
+          {
+            "expr": "cpu_utilization",
+            "format": "time_series",
+            "interval": "",
+            "legendFormat": "{{instance}}",
+            "refId": "A"
+          }
+        ],
+        "xaxis": {
+          "show": true
+        },
+        "yaxis": {
+          "show": true,
+          "format": "percent"
+        }
+      },
+      {
+        "type": "graph",
+        "title": "Memory Utilization",
+        "targets": [
+          {
+            "expr": "memory_utilization",
+            "format": "time_series",
+            "interval": "",
+            "legendFormat": "{{instance}}",
+            "refId": "A"
+          }
+        ],
+        "xaxis": {
+          "show": true
+        },
+        "yaxis": {
+          "show": true,
+          "format": "bytes"
+        }
+      },
+      {
+        "type": "graph",
+        "title": "Database Query Performance",
+        "targets": [
+          {
+            "expr": "db_query_performance",
+            "format": "time_series",
+            "interval": "",
+            "legendFormat": "{{instance}}",
+            "refId": "A"
+          }
+        ],
+        "xaxis": {
+          "show": true
+        },
+        "yaxis": {
+          "show": true,
+          "format": "ms"
+        }
+      },
+      {
+        "type": "graph",
+        "title": "Login and Registration Performance",
+        "targets": [
+          {
+            "expr": "login_registration_performance",
+            "format": "time_series",
+            "interval": "",
+            "legendFormat": "{{instance}}",
+            "refId": "A"
+          }
+        ],
+        "xaxis": {
+          "show": true
+        },
+        "yaxis": {
+          "show": true,
+          "format": "ms"
+        }
+      },
+      {
+        "type": "graph",
+        "title": "
